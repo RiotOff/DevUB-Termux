@@ -1,0 +1,8 @@
+pyrogram
+importlib
+psutil
+requests
+datetime
+asyncio
+uuid
+tgcrypto
