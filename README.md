@@ -26,7 +26,7 @@
 > [!TIP]
 > How to open userbot on Windows:
 > <br>
-> Open file "Launch.bat"
+> <code>python main.py</code>
 > <br>
 > <br>
 > How to open userbot on Termux:
