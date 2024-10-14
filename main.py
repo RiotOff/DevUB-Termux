@@ -140,6 +140,7 @@ async def restart(_, message):
 @app.on_message(filters.me & filters.command(["ping"], prefixes="."))
 async def ping(_, message):
     ping_start_time = time.time()
+    await message.edit("⏳")
     ping_end_time = time.time()
     ping_time = round((ping_end_time - ping_start_time) * 1000)
     uptime_seconds = int(round(time.time() - start_time))
