@@ -137,7 +137,7 @@ async def restart(_, message):
     restart_time = round(restart_end_time - restart_start_time, 2)
     await message.edit(f"`Модули перезапущены. Это заняло {restart_time} секунд.`")
 
-@app.on_message(filters.command(["ping"], prefixes="."))
+@app.on_message(filters.me & filters.command(["ping"], prefixes="."))
 async def ping(_, message):
     ping_start_time = time.time()
     ping_end_time = time.time()
